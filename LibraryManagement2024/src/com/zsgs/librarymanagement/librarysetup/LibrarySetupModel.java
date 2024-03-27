@@ -7,18 +7,13 @@ import java.text.ParseException;
 import com.zsgs.librarymanagement.datalayer.LibraryDatabase;
 import com.zsgs.librarymanagement.model.Library;
 
-//Access modifier for this LibrarySetupModel class should be default. 
-//So that outside of the package this class cannot be accessed.
 class LibrarySetupModel {
 
-	// This variable should be private.
-	// so that outside of this class cannot access this variable.
+	
 	private LibrarySetupView librarySetupView;
 
 	private Library library;
 
-	// Access modifier for this LibrarySetupModel constructor should be default.
-	// So that outside of the package this constructor cannot be accessed.
 	LibrarySetupModel(LibrarySetupView librarySetupView) throws ParseException, FileNotFoundException, IOException, org.json.simple.parser.ParseException {
 		this.librarySetupView = librarySetupView;
 		library = LibraryDatabase.getInstance().getLibrary();
