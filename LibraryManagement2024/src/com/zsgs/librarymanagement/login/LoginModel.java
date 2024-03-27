@@ -20,14 +20,10 @@ class LoginModel {
 		}
 	}
 
-	// this method should be private because this method used only with in this
-	// class.
 	private boolean isValidUserName(String userName) {
 		return userName.equals("zsgs")||userName.equals("zsgsAdmin");
 	}
 
-	// this method should be private because this method used only with in this
-	// class.
 	private boolean isValidPassword(String userName, String password) {
 		return (userName.equals("zsgs")&&password.equals("admin"))||(userName.equals("zsgsAdmin")&&password.equals("admin123"));
 	}
