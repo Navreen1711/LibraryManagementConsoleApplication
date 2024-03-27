@@ -15,16 +15,11 @@ import com.zsgs.librarymanagement.returnProcess.ReturnView;
 import com.zsgs.librarymanagement.search.AssignBookView;
 
 
-//Access modifier for this LibrarySetupView class should be public. 
-//So that outside of the package this class can be accessed and can create instance for this class.
 public class LibrarySetupView {
 
-	// This variable should be private.
-	// so that outside of this class cannot access this variable.
+
 	private LibrarySetupModel librarySetupModel;
 
-	// This Constructor should be public.
-	// so that all classes can create instance of this class.
 	public LibrarySetupView() throws ParseException, FileNotFoundException, IOException, org.json.simple.parser.ParseException {
 		librarySetupModel = new LibrarySetupModel(this);
 	}
